@@ -1,0 +1,557 @@
+    /* Navbar */
+    .navbar { background-color: #f5f6f6; }
+    .navbar-brand { font-weight: bold; font-size: 1.4rem; letter-spacing: 1px; }
+    .nav-link { font-weight: 900; color: black !important; }
+    .nav-link:hover { text-decoration: underline; }
+
+    /* Mega Menu */
+    .dropdown-menu.mega-menu {
+      width: 100%;
+      left: 0;
+      right: 0;
+      border-top: 2px solid #eee;
+      border-radius: 0;
+      padding: 20px 40px;
+    }
+
+    /* محصولات سمت چپ */
+    .mega-product {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .mega-product img { max-width: 130px; margin-bottom: 10px; }
+    .mega-product span { font-size: 0.85rem; font-weight: 500; text-align: center; }
+
+    /* باکس‌های سمت راست */
+    .mega-links-col {
+      border-left: 1px solid #ddd;
+      padding-left: 20px;
+    }
+    .mega-link-box {
+      background-color: #f0f0f0;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: black;
+      height: 100%;
+      width: 100%;
+      transition: all 0.2s ease-in-out;
+    }
+    .mega-link-box img { max-width: 50px;
+    }
+    .mega-link-box:hover {
+      border-color: #007aff;
+      box-shadow: 0 0 6px rgba(0,0,0,0.12);
+    }
+
+    /* آیکون‌ها */
+    .icon-btn { font-size: 1.3rem; margin-left: 15px; color: black; text-decoration: none; }
+    .icon-btn:hover { color: #007aff; }
+
+
+    /* لینک‌های منوبار مشکی */
+.navbar-nav .nav-link {
+  font-weight: 700;
+  color: black !important;
+  transition: color 0.2s ease-in-out;
+}
+
+/* رنگ آبی هنگام هاور */
+.navbar-nav .nav-link:hover {
+  color: #007aff !important;
+}
+
+    /* Video container */
+    .video-container {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .video-container video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none; /* ویدیو قابل کلیک نیست */
+      z-index: 1;
+    }
+
+    /* دکمه‌های روی ویدیو */
+    .cta-button {
+      position: absolute;
+      top: 65%;
+      left: 62%;
+      transform: translateX(-50%);
+      z-index: 10;
+      display: flex;
+      gap: 0.8em;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: nowrap;
+    }
+    .cta-button a {
+      display: inline-block;
+      font-weight: bold;
+      border-radius: 50px;
+      padding: 0.4em 1.8em;
+      font-size: 1.2vw;
+      text-align: center;
+      transition: 0.3s ease;
+      text-decoration: none;
+    }
+    .cta-button .buy-now {
+      border: 2px solid #000;
+      background: transparent;
+      color: #000;
+    }
+    .cta-button .buy-now:hover {
+      background: #000;
+      color: #fff;
+    }
+    .cta-button .learn-more {
+      border: none;
+      background: transparent;
+      color: #000;
+      text-decoration: underline;
+    }
+    .cta-button .learn-more:hover {
+      background: #000;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* ریسپانسیو موبایل */
+    @media (max-width: 766px) {
+      .cta-button {
+        top: 4%;
+        left: 50%;
+        gap: 0.2em;
+      }
+      .cta-button a {
+        font-size: 2vw;
+        padding: 0.2em 1em;
+      }
+    }
+    @media (max-width: 484px) {
+      .cta-button {
+        top: 10%;
+        gap: 0.5em;
+      }
+      .cta-button a {
+        font-size: 2vw;
+        padding: 0.2em 1em;
+      }
+    }
+
+    /* بنر دوم */
+    .banner-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 100%;
+      margin-top: 30px; /* فاصله از ویدیو */
+      z-index: 0;
+    }
+    .banner-wrapper img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* دکمه روی بنر دوم */
+.btn-box {
+      position: absolute;
+      top: 78%;     /* موقعیت دکمه نسبت به ارتفاع عکس */
+      left: 23%;    /* موقعیت دکمه نسبت به عرض عکس */
+      transform: translate(-50%, -50%); /* دقیقاً وسط نسبت به نقطه */
+      z-index: 8;
+    }
+
+.btn-custom {
+      font-weight: bold;
+      border-radius: 50px;
+      border: 2px solid #fff;
+      color: #fff;
+      background: transparent;
+      transition: all 0.3s ease;
+    }
+    .btn-custom:hover {
+      background: #fff;
+      color: #000;
+    }
+
+/* ریسپانسیو کردن دکمه */
+   /* ریسپانسیو شدن اندازه دکمه */
+    @media (max-width: 576px) {
+      .btn-custom { font-size: 8px; padding: 4px 8px; }
+    }
+    @media (min-width: 577px) and (max-width: 768px) {
+      .btn-custom { font-size: 14px; padding: 6px 16px; }
+    }
+    @media (min-width: 769px) {
+      .btn-custom { font-size: 16px; padding: 8px 20px; }
+    }
+
+
+
+
+        .product {
+      position: relative;
+      text-align: center;
+      cursor: pointer;
+      overflow: hidden;
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      max-width: 100%;
+      transition: transform 0.4s ease, filter 0.4s ease;
+    }
+
+    .product:hover img {
+      transform: scale(1.05);
+      filter: brightness(1.1);
+    }
+
+    .product-title {
+      position: absolute;
+      bottom: 80%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-family: "Arial", sans-serif;
+      font-weight: 700;
+      font-size: clamp(12px, 2vw, 18px);
+      color: #000;
+      white-space: nowrap;
+    }
+
+    .buy-btn {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%) translateY(20px);
+      background: black;
+      color: white;
+      border-radius: 50px;
+      padding: 6px 18px;
+      font-size: 14px;
+      opacity: 0;
+      transition: opacity 0.4s ease, transform 0.4s ease;
+      pointer-events: none;
+    }
+
+    .product:hover .buy-btn {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+      pointer-events: auto;
+    }
+
+    /* زیر 600px → اسکرول افقی درست */
+    @media (max-width: 700px) {
+      .scrollable-row {
+        display: flex !important;       /* تبدیل به فلکس */
+        flex-wrap: nowrap !important;   /* جلوگیری از شکستن */
+        overflow-x: auto !important;    /* فعال‌کردن اسکرول */
+        -webkit-overflow-scrolling: touch;
+        gap: 16px;
+        justify-content: flex-start !important; /* مرکز نکن */
+      }
+      .scrollable-row::-webkit-scrollbar {
+        display: none;
+      }
+      .scrollable-row > .col {
+        flex: 0 0 auto;   /* ثابت نگه داشتن */
+        width: 300px;     /* اندازه کارت */
+      }
+      .product {
+        width: 300px;
+        height: 300px;
+      }
+      .product img {
+        width: 300px;
+        height: 300px;
+      }
+      .product-title {
+          bottom: 80%; 
+        font-size: 16px; /* بازگشت به حالت اولیه */
+      }
+
+    }
+
+
+
+
+  h1 {
+      font-size: clamp(22px, 5vw, 56px);
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: clamp(14px, 2vw, 20px);
+      margin-bottom: 20px;
+    }
+    /* دکمه Shop now */
+    .btn-custom {
+      font-size: clamp(12px, 2vw, 18px);
+      padding: 8px 24px;
+      border-radius: 50rem;
+      font-weight: bold;
+      border: 2px solid black;
+      background: transparent;
+      color: black;
+      transition: all 0.3s;
+    }
+    .btn-custom:hover {
+      background-color: black;
+      color: white !important;
+    }
+    /* لینک Learn more */
+    .link-learn {
+      font-size: clamp(12px, 2vw, 18px);
+      font-weight: 500;
+      text-decoration: underline;
+      color: black;
+    }
+    .link-learn:hover {
+      color: gray;
+    }
+
+    /* دسکتاپ: چپ وسط */
+    @media (min-width: 768px) {
+      .overlay-box {
+        top: 50%;
+        left: 5%;
+        transform: translateY(-50%);
+        text-align: left;
+      }
+    }
+    /* موبایل: بالا وسط */
+    @media (max-width: 767px) {
+      .overlay-box {
+        top: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 360px) {
+  .overlay-box {
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 18px;   /* تیتر خیلی کوچیک‌تر */
+  }
+
+  p {
+    font-size: 12px;   /* متن توضیحی */
+  }
+
+  .btn-custom {
+    font-size: 10px;   /* فونت دکمه */
+    padding: 2px 8px;  /* دکمه جمع‌وجورتر */
+    border-width: 1px; /* خط باریک‌تر */
+  }
+
+  .link-learn {
+    font-size: 10px;   /* لینک learn more کوچیک */
+  }
+
+  .d-flex.gap-3 {
+    gap: 0.5rem !important; /* فاصله بین دوتا دکمه کمتر بشه */
+  }
+}
+
+
+  .product-slider {
+      display: flex;
+      gap: 16px;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      padding: 10px 0;
+    }
+
+    .product-slider::-webkit-scrollbar {
+      display: none;
+    }
+
+    .product-card {
+      flex: 0 0 auto;
+      width: 220px;
+      border-radius: 12px;
+      background: #fff;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      position: relative;
+      scroll-snap-align: start;
+    }
+
+    .product-image {
+  width: 204px;
+  height: 204px;
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9f9f9; /* بک‌گراند روشن برای عکس‌های کوچک */
+}
+
+.product-image img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;   /* کل عکس دیده بشه */
+  transition: transform 0.3s ease;
+}
+
+/* هاور: زوم نرم ولی داخل قاب */
+.product-image:hover img {
+  transform: scale(1.08);  /* کمی بزرگتر بشه، نه خیلی زیاد */
+}
+
+    .price {
+      font-size: 18px;
+      font-weight: bold;
+      color: black;
+      margin-top: 10px;
+    }
+
+    .old-price {
+      text-decoration: line-through;
+      color: #888;
+      font-size: 14px;
+    }
+
+    .discount {
+      color: #00a651;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+   /* خط پیشرفت */
+    .progress-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+    }
+    .arrow-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 1px solid #ccc;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;   /* سایز فلش */
+      color: #000;
+      cursor: pointer;
+    }
+    .arrow-btn:hover {
+      background: #f8f8f8;
+    }
+
+    .progress-line {
+      width: 250px;
+      height: 2px;
+      background: #ddd;
+      border-radius: 10px;
+      position: relative;
+    }
+
+    .progress-active {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 30%;
+      background: black;
+      border-radius: 10px;
+    }
+
+    .product-card p {
+  font-size: 18px;   /* سایز بزرگتر */
+  font-weight: 600;  /* ضخیم‌تر */
+  color: #222;       /* پررنگ‌تر از مشکی ملایم */
+  margin-top: 10px;
+}
+
+
+    footer {
+      background-color: #fff;
+      border-top: 1px solid #ddd;
+      font-size: 0.9rem;
+      margin-top: 30px;   /* فاصله فوتر از باکس بالایی */  
+      }
+    footer h6 {
+      font-weight: 700;
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+    }
+    footer a {
+      display: block;
+      color: #000;
+      text-decoration: none;
+      margin-bottom: 0.45rem;
+      font-size: 0.92rem;
+    }
+    footer a:hover { text-decoration: underline; }
+
+    /* Desktop column spacing and borders */
+    .mega-col {
+      padding-inline: 1.25rem;
+    }
+    .mega-col:not(.no-divider) {
+      border-right: 1px solid #eee;
+    }
+
+    .about-block {
+      margin-top: 1.25rem;
+      padding-top: 0.75rem;
+    }
+    .footer-bottom {
+      border-top: 1px solid #ddd;
+      padding-top: 10px;
+      font-size: 0.8rem;
+      color: #555;
+      }
+
+
+      footer {
+    border-top: 1px solid #ddd;
+}
+footer a {
+    color: black;
+    text-decoration: none;
+    white-space: nowrap;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+.divider-line {
+    border-top: 1px solid #eee;
+    margin: 0.5rem 0 0 0; /* فقط بالا فاصله، پایین صفر */
+}
+
+
