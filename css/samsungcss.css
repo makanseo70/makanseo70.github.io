@@ -67,165 +67,131 @@
   color: #007aff !important;
 }
 
-    /* Video container */
-    .video-container {
-      position: relative;
-      width: 100%;
-      height: 100vh;
-      overflow: hidden;
-    }
-    .video-container video {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      pointer-events: none; /* ویدیو قابل کلیک نیست */
-      z-index: 1;
-    }
+   /* دکمه‌های روی عکس */
+.cta-button {
+  position: absolute;
+  top: 55%;       /* الان جابه‌جا میشه */
+  left: 62%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  gap: 0.8em;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
 
-    /* دکمه‌های روی ویدیو */
-    .cta-button {
-      position: absolute;
-      top: 65%;
-      left: 62%;
-      transform: translateX(-50%);
-      z-index: 10;
-      display: flex;
-      gap: 0.8em;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: nowrap;
-    }
-    .cta-button a {
-      display: inline-block;
-      font-weight: bold;
-      border-radius: 50px;
-      padding: 0.4em 1.8em;
-      font-size: 1.2vw;
-      text-align: center;
-      transition: 0.3s ease;
-      text-decoration: none;
-    }
-    .cta-button .buy-now {
-      border: 2px solid #000;
-      background: transparent;
-      color: #000;
-    }
-    .cta-button .buy-now:hover {
-      background: #000;
-      color: #fff;
-    }
-    .cta-button .learn-more {
-      border: none;
-      background: transparent;
-      color: #000;
-      text-decoration: underline;
-    }
-    .cta-button .learn-more:hover {
-      background: #000;
-      color: #fff;
-      text-decoration: none;
-    }
+.cta-button a {
+  display: inline-block;
+  font-weight: bold;
+  border-radius: 50px;
+  padding: 0.3em 1.2em;
+  font-size: 1.2vw;   /* فونت وابسته به عرض صفحه */
+  text-align: center;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
 
-    /* ریسپانسیو موبایل */
-    @media (max-width: 766px) {
-      .cta-button {
-        top: 4%;
-        left: 50%;
-        gap: 0.2em;
-      }
-      .cta-button a {
-        font-size: 2vw;
-        padding: 0.2em 1em;
-      }
-    }
-    @media (max-width: 484px) {
-      .cta-button {
-        top: 10%;
-        gap: 0.5em;
-      }
-      .cta-button a {
-        font-size: 2vw;
-        padding: 0.2em 1em;
-      }
-    }
+/* استایل دکمه‌ها */
+.cta-button .buy-now {
+  border: 2px solid #000;
+  background: transparent;
+  color: #000;
+}
+.cta-button .buy-now:hover {
+  background: #000;
+  color: #fff;
+}
 
-    /* بنر دوم */
-    .banner-wrapper {
-      position: relative;
-      width: 100%;
-      max-width: 100%;
-      margin-top: 30px; /* فاصله از ویدیو */
-      z-index: 0;
-    }
-    .banner-wrapper img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
+.cta-button .learn-more {
+  border: none;
+  background: transparent;
+  color: #000;
+  text-decoration: underline;
+}
+.cta-button .learn-more:hover {
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+}
 
-    /* دکمه روی بنر دوم */
-.btn-box {
-      position: absolute;
-      top: 78%;     /* موقعیت دکمه نسبت به ارتفاع عکس */
-      left: 23%;    /* موقعیت دکمه نسبت به عرض عکس */
-      transform: translate(-50%, -50%); /* دقیقاً وسط نسبت به نقطه */
-      z-index: 8;
-    }
+/* بنر */
+.banner-wrapper2 {
+  position: relative; /* مهم! مرجع absolute همین باشه */
+  width: 100%;
+  max-width: 100%;
+  z-index: 0;
+}
 
-.btn-custom {
-      font-weight: bold;
-      border-radius: 50px;
-      border: 2px solid #fff;
-      color: #fff;
-      background: transparent;
-      transition: all 0.3s ease;
-    }
-    .btn-custom:hover {
-      background: #fff;
-      color: #000;
-    }
+.banner-wrapper2 img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
-/* ریسپانسیو کردن دکمه */
-   /* ریسپانسیو شدن اندازه دکمه */
-    @media (max-width: 576px) {
-      .btn-custom { font-size: 8px; padding: 4px 8px; }
-    }
-    @media (min-width: 577px) and (max-width: 768px) {
-      .btn-custom { font-size: 14px; padding: 6px 16px; }
-    }
-    @media (min-width: 769px) {
-      .btn-custom { font-size: 16px; padding: 8px 20px; }
-    }
+ .banner-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+.banner-wrapper img {
+  width: 100%;
+  display: block;
+}
 
 
+.btn-buy {
+  position: absolute;
+  top: 73%;       /* الان جابه‌جا میشه */
+  left: 23%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  gap: 0.8em;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
 
+.btn-buy {
+  display: inline-block;
+  font-weight: bold;
+  border-radius: 50px;
+  padding: 0.3em 1.2em;
+  font-size: 1.2vw;   /* فونت وابسته به عرض صفحه */
+  text-align: center;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
 
-        .product {
-      position: relative;
-      text-align: center;
-      cursor: pointer;
-      overflow: hidden;
-    }
+/* استایل دکمه‌ها */
+.btn-buy {
+  border: 2px solid #fcfbfb;
+  background: transparent;
+  color: #f8f7f7;
+}
+.cta-button2 .buy-now2:hover {
+  background: #fdfafa;
+  color: #0a0a0a;
+}
 
-    .product img {
-      width: 100%;
-      height: auto;
-      aspect-ratio: 1 / 1;
-      object-fit: cover;
-      max-width: 100%;
-      transition: transform 0.4s ease, filter 0.4s ease;
-    }
+.product {
+  position: relative;       /* مرجع دکمه absolute */
+  overflow: hidden;         /* دکمه بیرون نره */
+  border-radius: 10px;
+  text-align: center;
+}
 
-    .product:hover img {
-      transform: scale(1.05);
-      filter: brightness(1.1);
-    }
+.product img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
 
-    .product-title {
+.product-title {
       position: absolute;
       bottom: 80%;
       left: 50%;
@@ -237,26 +203,32 @@
       white-space: nowrap;
     }
 
-    .buy-btn {
-      position: absolute;
-      bottom: 10px;
-      left: 50%;
-      transform: translateX(-50%) translateY(20px);
-      background: black;
-      color: white;
-      border-radius: 50px;
-      padding: 6px 18px;
-      font-size: 14px;
-      opacity: 0;
-      transition: opacity 0.4s ease, transform 0.4s ease;
-      pointer-events: none;
-    }
 
-    .product:hover .buy-btn {
-      opacity: 1;
-      transform: translateX(-50%) translateY(0);
-      pointer-events: auto;
-    }
+/* دکمه Buy now */
+.buy-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  background: black;
+  color: white;
+  border-radius: 50px;
+  padding: 6px 18px;
+  font-size: 14px;
+  opacity: 0;                   /* ابتدا مخفی */
+  pointer-events: none;          /* غیرقابل کلیک وقتی مخفی */
+  text-decoration: none;
+  font-weight: bold;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  z-index: 10;
+}
+
+/* هاور برای دسکتاپ */
+.product:hover .buy-btn {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
 
     /* زیر 600px → اسکرول افقی درست */
     @media (max-width: 700px) {
@@ -292,8 +264,7 @@
 
 
 
-
-  h1 {
+ h1 {
       font-size: clamp(22px, 5vw, 56px);
       font-weight: bold;
       margin-bottom: 10px;
@@ -303,79 +274,149 @@
       margin-bottom: 20px;
     }
     /* دکمه Shop now */
-    .btn-custom {
-      font-size: clamp(12px, 2vw, 18px);
-      padding: 8px 24px;
-      border-radius: 50rem;
-      font-weight: bold;
-      border: 2px solid black;
-      background: transparent;
-      color: black;
-      transition: all 0.3s;
-    }
-    .btn-custom:hover {
-      background-color: black;
-      color: white !important;
-    }
-    /* لینک Learn more */
-    .link-learn {
-      font-size: clamp(12px, 2vw, 18px);
-      font-weight: 500;
-      text-decoration: underline;
-      color: black;
-    }
-    .link-learn:hover {
-      color: gray;
-    }
+.position-relative {
+  position: relative;
+}
 
-    /* دسکتاپ: چپ وسط */
-    @media (min-width: 768px) {
-      .overlay-box {
-        top: 50%;
-        left: 5%;
-        transform: translateY(-50%);
-        text-align: left;
-      }
-    }
-    /* موبایل: بالا وسط */
-    @media (max-width: 767px) {
-      .overlay-box {
-        top: 5%;
-        left: 50%;
-        transform: translateX(-50%);
-        text-align: center;
-      }
-    }
+/* overlay-box روی ویدیو */
+.overlay-box {
+  position: absolute;
+  z-index: 10;         /* بالاتر از ویدیو */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+}
 
-    @media (max-width: 360px) {
+/* تیتر و متن */
+.overlay-box h1 {
+  font-size: clamp(22px, 5vw, 56px);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.overlay-box p {
+  font-size: clamp(14px, 2vw, 20px);
+  margin-bottom: 20px;
+}
+
+/* دکمه شفاف با hover مشکی */
+.btn-custom {
+  display: inline-block;
+  font-size: clamp(12px, 2vw, 18px);
+  padding: 8px 24px;
+  border-radius: 50rem;
+  font-weight: bold;
+  border: 2px solid black;
+  background-color: rgba(7, 7, 7, 0.2); /* کمی قابل دیدن */
+  color: black;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 11;   /* بالاتر از overlay */
+  cursor: pointer;
+}
+
+/* هاور */
+.btn-custom:hover {
+  background-color: black !important;
+  color: white !important;
+  border-color: black;
+}
+
+/* لینک Learn more */
+.link-learn {
+  display: inline-block;
+  font-size: clamp(12px, 2vw, 18px);
+  font-weight: 500;
+  text-decoration: underline;
+  color: black;
+}
+
+.link-learn:hover {
+  color: gray;
+}
+
+/* overlay-box دسکتاپ: چپ وسط */
+@media (min-width: 768px) {
+  .overlay-box {
+    top: 50%;
+    left: 5%;               /* فاصله از لبه چپ */
+    transform: translateY(-50%);
+    text-align: left;
+  }
+
+  /* دکمه‌ها در کنار هم از سمت چپ */
+  .overlay-box .d-flex {
+    justify-content: flex-start;  /* از سمت چپ چیده شوند */
+  }
+}
+/* واکنش‌گرایی موبایل */
+@media (max-width: 767px) {
   .overlay-box {
     top: 5%;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
   }
-
-  h1 {
-    font-size: 18px;   /* تیتر خیلی کوچیک‌تر */
-  }
-
-  p {
-    font-size: 12px;   /* متن توضیحی */
-  }
-
   .btn-custom {
-    font-size: 10px;   /* فونت دکمه */
-    padding: 2px 8px;  /* دکمه جمع‌وجورتر */
-    border-width: 1px; /* خط باریک‌تر */
+    font-size: 10px;
+    padding: 4px 12px;
   }
-
   .link-learn {
-    font-size: 10px;   /* لینک learn more کوچیک */
+    font-size: 10px;
   }
+}
 
-  .d-flex.gap-3 {
-    gap: 0.5rem !important; /* فاصله بین دوتا دکمه کمتر بشه */
-  }
+
+   /*  دکمه‌های روی عکس بنر چهارم */
+.cta-button2 {
+  position: absolute;
+  top: 48%;       /* الان جابه‌جا میشه */
+  left: 15%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  gap: 0.8em;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.cta-button2 a {
+  display: inline-block;
+  font-weight: bold;
+  border-radius: 50px;
+  padding: 0.3em 1.2em;
+  font-size: 1.2vw;   /* فونت وابسته به عرض صفحه */
+  text-align: center;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+/* استایل دکمه‌ها */
+.cta-button2 .buy-now2 {
+  border: 2px solid #fcfbfb;
+  background: transparent;
+  color: #f8f7f7;
+}
+.cta-button2 .buy-now2:hover {
+  background: #fdfafa;
+  color: #0a0a0a;
+}
+
+.cta-button2 .learn-more2 {
+  border: none;
+  background: transparent;
+  color: #f5f2f2;
+  text-decoration: underline;
+}
+.cta-button2 .learn-more2:hover {
+  background: #fcf9f9;
+  color: #0a0a0a;
+  text-decoration: none;
 }
 
 
