@@ -1,615 +1,700 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Samsung Mega Menu</title>
-  <link rel="stylesheet" href="css/samsungcss.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
- 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Responsive Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" />
 </head>
+
 <body>
 
-<nav class="navbar navbar-expand-xl">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">SAMSUNG</a>
+    <nav class="navbar navbar-expand-sm navbar-dark navbar-custom">
+        <div class="container-fluid">
 
-    <!-- Mobile icons + hamburger -->
-    <div class="d-flex align-items-center ms-auto d-xl-none">
-      <a href="#" class="icon-btn"><i class="bi bi-search"></i></a>
-      <a href="#" class="icon-btn"><i class="bi bi-cart"></i></a>
-      <a href="#" class="icon-btn"><i class="bi bi-person"></i></a>
-      <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+            <!-- Logo -->
+            <a class="navbar-brand " href="#">
+                <img src="images/menu/logo.png" alt="Logo">
+            </a>
+
+            <!-- Mobile hamburger and icons -->
+            <div class="mobile-icons-wrapper d-xl-none">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <!-- منو -->
+            <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
+                <ul class="navbar-nav mb-2">
+                    <li class="nav-item"><a class="nav-link" href="#">home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Brands</a></li>
+                    <!-- Home با منوی کشویی -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">tea</a></li>
+                            <li><a class="dropdown-item" href="#">spices</a></li>
+                            <li><a class="dropdown-item" href="#">other</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">FA</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Spacer -->
+    <div class="navbar-spacer"></div>
+
+    <div class="container-fluid p-0 banner">
+        <!-- عکس دسکتاپ -->
+        <img src="images/banner/desktop-banner.jpg" alt="بنر دسکتاپ" class="img-fluid d-none d-md-block">
+
+        <!-- عکس موبایل -->
+        <img src="images/banner/mobile-banner.jpg" alt="بنر موبایل" class="img-fluid d-block d-md-none">
+
+        <!-- متن روی عکس -->
+        <div class="banner-text">Golestan Tea</div>
+        <div class="banner-subtext">Fluent in taste</div>
     </div>
 
-    <div class="collapse navbar-collapse fw-bold" id="mainNavbar">
-      <ul class="navbar-nav me-auto mb-2 mb-xl-0">
-        
-        <!-- Mega Menu -->
-        <li class="nav-item dropdown position-static">
-          <a class="nav-link dropdown-toggle " href="#" id="shopMenu" data-bs-toggle="dropdown" aria-expanded="false">
-            Shop
-          </a>
-          <div class="dropdown-menu mega-menu" aria-labelledby="shopMenu">
-            <div class="row">
-              
-              <!-- سمت چپ: 2 ردیف × 7 ستون -->
-              <div class="col-md-8">
-                <div class="row g-4 text-center">
-                  <!-- ردیف اول -->
-                  <div class="col mega-product"><img src="images/images1/3.webp"><span>Galaxy Z Fold7</span></div>
-                  <div class="col mega-product"><img src="images/images1/2.webp"><span>Galaxy Z Flip7</span></div>
-                  <div class="col mega-product"><img src="images/images1/3.webp"><span>Galaxy S25 Ultra</span></div>
-                  <div class="col mega-product"><img src="images/images1/4.webp"><span>Galaxy Tab S10</span></div>
-                  <div class="col mega-product"><img src="images/images1/5.webp"><span>Galaxy Watch8</span></div>
-                  <div class="col mega-product"><img src="images/images1/6.webp"><span>Galaxy Watch Ultra</span></div>
-                  <div class="col mega-product"><img src="images/images1/7.webp"><span>Galaxy Buds3 Pro</span></div>
-                  <!-- ردیف دوم -->
-                  <div class="col mega-product"><img src="images/images1/8.webp"><span>Galaxy Book5 Pro</span></div>
-                  <div class="col mega-product"><img src="images/images1/9.webp"><span>Product 9</span></div>
-                  <div class="col mega-product"><img src="images/images1/10.webp"><span>Product 10</span></div>
-                  <div class="col mega-product"><img src="images/images1/11.webp"><span>Product 11</span></div>
-                  <div class="col mega-product"><img src="images/images1/12.webp"><span>Product 12</span></div>
-                  <div class="col mega-product"><img src="images/images1/13.webp"><span>Product 13</span></div>
-                  <div class="col mega-product"><img src="images/images1/14.webp"><span>Product 14</span></div>
-                </div>
-              </div>
+    <div class="container content-spacing">
+        <h2>Introduction</h2>
+        <p>
+            Since its foundation, Golestan has been expanding the range of its products and now it processes, packages
+            and distributes all different types of teas, rice, spices, pistachios and other food products. To meet all
+            the national and international food standards, our products go through quality control in our well-equipped
+            laboratories and then packed using the most sophisticated automatic machines in a highly hygienic
+            environment.
+        </p>
+        <p>
+            <span class="highlight">Golestan Tea:</span> Sourced from the best tea estates on the bank of Brahmaputra
+            River in Assam and Darjeeling, India, Golestan teas possess the smell and flavor of the traditional Indian
+            teas.
+        </p>
+    </div>
 
-              <!-- سمت راست: 4 ردیف × 2 ستون -->
-              <div class="col-md-4 mega-links-col">
-                <div class="row g-3">
-                  <div class="col-6"><div class="mega-link-box"><img src="images/images1/1.webp"><span>Curated Collections</span></div></div>
-                  <div class="col-6"><div class="mega-link-box"><img src="images/images1/2.webp"><span>AI Ecosystem</span></div></div>
-                  <div class="col-6"><div class="mega-link-box"><img src="images/images1/3.webp"><span>Samsung Rewards</span></div></div>
-                  <div class="col-6"><div class="mega-link-box"><img src="images/images1/4.webp"><span>Student Offers</span></div></div>
-                  <div class="col-6"><div class="mega-link-box"><img src="images/images1/5.webp"><span>Workplace Offers</span></div></div>
-                  <div class="col-6"><div class="mega-link-box"><img src="images/images1/6.webp"><span>Why Buy Samsung</span></div></div>
-                  <div class="col-6"><div class="mega-link-box"><img src="images/images1/7.webp"><span>Samsung Care+</span></div></div>
-                  <div class="col-6"><div class="mega-link-box"><img src="images/images1/8.webp"><span>SmartThings</span></div></div>
+    <div class="container py-5 d-flex justify-content-center">
+        <div class="row align-items-center product-card mx-auto">
+
+            <!-- تصویر محصول -->
+            <div class="col-md-3 text-center">
+                <img src="images/product/product-tea-1-1.jpg" alt="Earl Grey Tea" class="tea-img img-fluid">
+            </div>
+
+            <!-- توضیحات محصول -->
+            <div class="col-md-9 text-section">
+                <h5 class="product-title">
+                    <img src="images/product/footer-icon1.png" alt="Cup" class="cup-icon">
+                    <span class="title-text">Fragrant Earl Grey Tea</span>
+                </h5>
+                <div class="divider-line"></div>
+
+                <!-- ردیف Net Weight و باکس‌ها -->
+                <div class="weight-row">
+                    <div class="weight-text">
+                        <h6>Net Weight</h6>
+                    </div>
+                    <div class="d-flex">
+                        <div class="weight-box">
+                            <span class="num">500</span>
+                            <span class="unit">gr</span>
+                        </div>
+                        <div class="weight-box">
+                            <span class="num">225</span>
+                            <span class="unit">gr</span>
+                        </div>
+                        <div class="weight-box">
+                            <span class="num">100</span>
+                            <span class="unit">gr</span>
+                        </div>
+                    </div>
                 </div>
-              </div>
+
+                <!-- خط زیر باکس‌ها -->
+                <div class="divider-line"></div>
+
+                <p class="mt-3 mb-0">
+                    Golestan Ceylon Gold Tea comes from the youngest tea plants in Sri Lankan tea estates which spread
+                    across the
+                    country’s foothills and fields. Infusion time: 7 to 8 minutes
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container py-5 d-flex justify-content-center">
+        <div class="row align-items-center product-card mx-auto">
+
+            <!-- تصویر محصول -->
+            <div class="col-md-3 text-center">
+                <img src="images/product/product-tea-2-1.jpg" alt="Earl Grey Tea" class="tea-img img-fluid">
+            </div>
+
+            <!-- توضیحات محصول -->
+            <div class="col-md-9 text-section">
+                <h5 class="product-title">
+                    <img src="images/product/footer-icon1.png" alt="Cup" class="cup-icon">
+                    <span class="title-text">Fragrant Earl Grey Tea</span>
+                </h5>
+                <div class="divider-line"></div>
+
+                <!-- ردیف Net Weight و باکس‌ها -->
+                <div class="weight-row">
+                    <div class="weight-text">
+                        <h6>Net Weight</h6>
+                    </div>
+                    <div class="d-flex">
+                        <div class="weight-box">
+                            <span class="num">500</span>
+                            <span class="unit">gr</span>
+                        </div>
+                        <div class="weight-box">
+                            <span class="num">225</span>
+                            <span class="unit">gr</span>
+                        </div>
+                        <div class="weight-box">
+                            <span class="num">100</span>
+                            <span class="unit">gr</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- خط زیر باکس‌ها -->
+                <div class="divider-line"></div>
+
+                <p class="mt-3 mb-0">
+                    Golestan Ceylon Gold Tea comes from the youngest tea plants in Sri Lankan tea estates which spread
+                    across the
+                    country’s foothills and fields. Infusion time: 7 to 8 minutes
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="container py-5 d-flex justify-content-center">
+        <div class="row align-items-center product-card mx-auto">
+
+            <!-- تصویر محصول -->
+            <div class="col-md-3 text-center">
+                <img src="images/product/product-tea-3-1.jpg" alt="Earl Grey Tea" class="tea-img img-fluid">
+            </div>
+
+            <!-- توضیحات محصول -->
+            <div class="col-md-9 text-section">
+                <h5 class="product-title">
+                    <img src="images/product/footer-icon1.png" alt="Cup" class="cup-icon">
+                    <span class="title-text">Fragrant Earl Grey Tea</span>
+                </h5>
+                <div class="divider-line"></div>
+
+                <!-- ردیف Net Weight و باکس‌ها -->
+                <div class="weight-row">
+                    <div class="weight-text">
+                        <h6>Net Weight</h6>
+                    </div>
+                    <div class="d-flex">
+                        <div class="weight-box">
+                            <span class="num">500</span>
+                            <span class="unit">gr</span>
+                        </div>
+                        <div class="weight-box">
+                            <span class="num">225</span>
+                            <span class="unit">gr</span>
+                        </div>
+                        <div class="weight-box">
+                            <span class="num">100</span>
+                            <span class="unit">gr</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- خط زیر باکس‌ها -->
+                <div class="divider-line"></div>
+
+                <p class="mt-3 mb-0">
+                    Golestan Ceylon Gold Tea comes from the youngest tea plants in Sri Lankan tea estates which spread
+                    across the
+                    country’s foothills and fields. Infusion time: 7 to 8 minutes
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="container py-5 d-flex justify-content-center">
+        <div class="row align-items-center product-card mx-auto">
+
+            <!-- تصویر محصول -->
+            <div class="col-md-3 text-center">
+                <img src="images/product/product-tea-4-1.jpg" alt="Earl Grey Tea" class="tea-img img-fluid">
+            </div>
+
+            <!-- توضیحات محصول -->
+            <div class="col-md-9 text-section">
+                <h5 class="product-title">
+                    <img src="images/product/footer-icon1.png" alt="Cup" class="cup-icon">
+                    <span class="title-text">Fragrant Earl Grey Tea</span>
+                </h5>
+                <div class="divider-line"></div>
+
+                <!-- ردیف Net Weight و باکس‌ها -->
+                <div class="weight-row">
+                    <div class="weight-text">
+                        <h6>Net Weight</h6>
+                    </div>
+                    <div class="d-flex">
+                        <div class="weight-box">
+                            <span class="num">500</span>
+                            <span class="unit">gr</span>
+                        </div>
+                        <div class="weight-box">
+                            <span class="num">225</span>
+                            <span class="unit">gr</span>
+                        </div>
+                        <div class="weight-box">
+                            <span class="num">100</span>
+                            <span class="unit">gr</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- خط زیر باکس‌ها -->
+                <div class="divider-line"></div>
+
+                <p class="mt-3 mb-0">
+                    Golestan Ceylon Gold Tea comes from the youngest tea plants in Sri Lankan tea estates which spread
+                    across the
+                    country’s foothills and fields. Infusion time: 7 to 8 minutes
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="container py-5 d-flex justify-content-center">
+        <div class="row align-items-center product-card mx-auto">
+
+            <!-- تصویر محصول -->
+            <div class="col-md-3 text-center">
+                <img src="images/product/product-tea-3-1.jpg" alt="Earl Grey Tea" class="tea-img img-fluid">
+            </div>
+
+            <!-- توضیحات محصول -->
+            <div class="col-md-9 text-section">
+                <h5 class="product-title">
+                    <img src="images/product/footer-icon1.png" alt="Cup" class="cup-icon">
+                    <span class="title-text">Fragrant Earl Grey Tea</span>
+                </h5>
+                <div class="divider-line"></div>
+
+                <!-- ردیف Net Weight و باکس‌ها -->
+                <div class="weight-row">
+                    <div class="weight-text">
+                        <h6>Net Weight</h6>
+                    </div>
+                    <div class="d-flex">
+                        <div class="weight-box">
+                            <span class="num">500</span>
+                            <span class="unit">gr</span>
+                        </div>
+                        <div class="weight-box">
+                            <span class="num">225</span>
+                            <span class="unit">gr</span>
+                        </div>
+                        <div class="weight-box">
+                            <span class="num">100</span>
+                            <span class="unit">gr</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- خط زیر باکس‌ها -->
+                <div class="divider-line"></div>
+
+                <p class="mt-3 mb-0">
+                    Golestan Ceylon Gold Tea comes from the youngest tea plants in Sri Lankan tea estates which spread
+                    across the
+                    country’s foothills and fields. Infusion time: 7 to 8 minutes
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container py-5 d-flex justify-content-center">
+        <div class="row align-items-center product-card mx-auto">
+
+            <!-- تصویر محصول -->
+            <div class="col-md-3 text-center">
+                <img src="images/product/product-tea-1-1.jpg" alt="Earl Grey Tea" class="tea-img img-fluid">
+            </div>
+
+            <!-- توضیحات محصول -->
+            <div class="col-md-9 text-section">
+                <h5 class="product-title">
+                    <img src="images/product/footer-icon1.png" alt="Cup" class="cup-icon">
+                    <span class="title-text">Fragrant Earl Grey Tea</span>
+                </h5>
+                <div class="divider-line"></div>
+
+                <!-- ردیف Net Weight و باکس‌ها -->
+                <div class="weight-row">
+                    <div class="weight-text">
+                        <h6>Net Weight</h6>
+                    </div>
+                    <div class="d-flex">
+                        <div class="weight-box">
+                            <span class="num">500</span>
+                            <span class="unit">gr</span>
+                        </div>
+                        <div class="weight-box">
+                            <span class="num">225</span>
+                            <span class="unit">gr</span>
+                        </div>
+                        <div class="weight-box">
+                            <span class="num">100</span>
+                            <span class="unit">gr</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- خط زیر باکس‌ها -->
+                <div class="divider-line"></div>
+
+                <p class="mt-3 mb-0">
+                    Golestan Ceylon Gold Tea comes from the youngest tea plants in Sri Lankan tea estates which spread
+                    across the
+                    country’s foothills and fields. Infusion time: 7 to 8 minutes
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container py-5 d-flex justify-content-center">
+        <div class="row align-items-center product-card mx-auto">
+
+            <!-- تصویر محصول -->
+            <div class="col-md-3 text-center">
+                <img src="images/product/product-tea-2-1.jpg" alt="Earl Grey Tea" class="tea-img img-fluid">
+            </div>
+
+            <!-- توضیحات محصول -->
+            <div class="col-md-9 text-section">
+                <h5 class="product-title">
+                    <img src="images/product/footer-icon1.png" alt="Cup" class="cup-icon">
+                    <span class="title-text">Fragrant Earl Grey Tea</span>
+                </h5>
+                <div class="divider-line"></div>
+
+                <!-- ردیف Net Weight و باکس‌ها -->
+                <div class="weight-row">
+                    <div class="weight-text">
+                        <h6>Net Weight</h6>
+                    </div>
+                    <div class="d-flex">
+                        <div class="weight-box">
+                            <span class="num">500</span>
+                            <span class="unit">gr</span>
+                        </div>
+                        <div class="weight-box">
+                            <span class="num">225</span>
+                            <span class="unit">gr</span>
+                        </div>
+                        <div class="weight-box">
+                            <span class="num">100</span>
+                            <span class="unit">gr</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- خط زیر باکس‌ها -->
+                <div class="divider-line"></div>
+
+                <p class="mt-3 mb-0">
+                    Golestan Ceylon Gold Tea comes from the youngest tea plants in Sri Lankan tea estates which spread
+                    across the
+                    country’s foothills and fields. Infusion time: 7 to 8 minutes
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container py-5 d-flex justify-content-center">
+        <div class="row align-items-center product-card mx-auto">
+
+            <!-- تصویر محصول -->
+            <div class="col-md-3 text-center">
+                <img src="images/product/product-greentea-9.jpg" alt="Earl Grey Tea" class="tea-img img-fluid">
+            </div>
+
+            <!-- توضیحات محصول -->
+            <div class="col-md-9 text-section">
+                <h5 class="product-title">
+                    <img src="images/product/footer-icon2.png" alt="Cup" class="cup-icon">
+                    <span class="title-text">Fragrant Earl Grey Tea</span>
+                </h5>
+                <div class="divider-line"></div>
+
+                <div class="weight-row">
+                    <div class="weight-text">
+                        <h6>Net Weight</h6>
+                    </div>
+                    <div class="d-flex">
+                        <div class="weight-box"><span class="num">500</span></div>
+                        <div class="weight-box"><span class="num">225</span></div>
+                        <div class="weight-box"><span class="num">100</span></div>
+                    </div>
+                </div>
+
+                <div class="divider-line"></div>
+                <p class="mt-3 mb-0">
+                    Golestan Ceylon Gold Tea comes from the youngest tea plants in Sri Lankan tea estates which spread
+                    across the country’s foothills and fields. Infusion time: 7 to 8 minutes
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="container py-5 d-flex justify-content-center">
+        <div class="row align-items-center product-card mx-auto">
+
+            <!-- تصویر محصول -->
+            <div class="col-md-3 text-center">
+                <img src="images/product/product-blackline-6.jpg" alt="Green Tea" class="tea-img img-fluid">
+            </div>
+
+            <!-- توضیحات محصول -->
+            <div class="col-md-9 text-section">
+                <h5 class="product-title">
+                    <img src="images/product/footer-icon2.png" alt="Cup" class="cup-icon">
+                    <span class="title-text">Fragrant Earl Grey Tea</span>
+                </h5>
+                <div class="divider-line"></div>
+
+                <div class="weight-row">
+                    <div class="weight-text">
+                        <h6>Net Weight</h6>
+                    </div>
+                    <div class="d-flex">
+                        <div class="weight-box"><span class="num">500</span></div>
+                        <div class="weight-box"><span class="num">225</span></div>
+                        <div class="weight-box"><span class="num">100</span></div>
+                    </div>
+                </div>
+
+                <div class="divider-line"></div>
+                <p class="mt-3 mb-0">
+                    Golestan Ceylon Gold Tea comes from the youngest tea plants in Sri Lankan tea estates which
+                    spread across the country’s foothills and fields. Infusion time: 7 to 8 minutes
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container py-5 d-flex justify-content-center">
+        <div class="row align-items-center product-card mx-auto">
+
+            <!-- تصویر محصول -->
+            <div class="col-md-3 text-center">
+                <img src="images/product/product-teabag-1-1.jpg" alt="Earl Grey Tea" class="tea-img img-fluid">
+            </div>
+
+            <!-- توضیحات محصول -->
+            <div class="col-md-9 text-section">
+                <h5 class="product-title">
+                    <img src="images/product/footer-icon2.png" alt="Cup" class="cup-icon">
+                    <span class="title-text">Fragrant Earl Grey Tea</span>
+                </h5>
+                <div class="divider-line"></div>
+
+                <div class="weight-row">
+                    <div class="weight-text">
+                        <h6>Net Weight</h6>
+                    </div>
+                    <div class="d-flex">
+                        <div class="weight-box"><span class="num">500</span></div>
+                        <div class="weight-box"><span class="num">225</span></div>
+                        <div class="weight-box"><span class="num">100</span></div>
+                    </div>
+                </div>
+
+                <div class="divider-line"></div>
+                <p class="mt-3 mb-0">
+                    Golestan Ceylon Gold Tea comes from the youngest tea plants in Sri Lankan tea estates which spread
+                    across the country’s foothills and fields. Infusion time: 7 to 8 minutes
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="container py-5 d-flex justify-content-center">
+        <div class="row align-items-center product-card mx-auto">
+
+            <!-- تصویر محصول -->
+            <div class="col-md-3 text-center">
+                <img src="images/product/product-teabag-2.jpg" alt="Green Tea" class="tea-img img-fluid">
+            </div>
+
+            <!-- توضیحات محصول -->
+            <div class="col-md-9 text-section">
+                <h5 class="product-title">
+                    <img src="images/product/footer-icon2.png" alt="Cup" class="cup-icon">
+                    <span class="title-text">Fragrant Earl Grey Tea</span>
+                </h5>
+                <div class="divider-line"></div>
+
+                <div class="weight-row">
+                    <div class="weight-text">
+                        <h6>Net Weight</h6>
+                    </div>
+                    <div class="d-flex">
+                        <div class="weight-box"><span class="num">500</span></div>
+                        <div class="weight-box"><span class="num">225</span></div>
+                        <div class="weight-box"><span class="num">100</span></div>
+                    </div>
+                </div>
+
+                <div class="divider-line"></div>
+                <p class="mt-3 mb-0">
+                    Golestan Ceylon Gold Tea comes from the youngest tea plants in Sri Lankan tea estates which
+                    spread across the country’s foothills and fields. Infusion time: 7 to 8 minutes
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="social-icons">
+        <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="linkedin"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="telegram"><i class="fab fa-telegram-plane"></i></a>
+        <a href="#" class="share"><i class="fas fa-share-alt"></i></a>
+        <a href="#" class="globe"><i class="fas fa-globe"></i></a>
+    </div>
+
+    <!-- نوار ضخیم -->
+    <div class="social-bar"></div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container px-0">
+            <div class="footer-row">
+
+                <div class="footer-col">
+                    <img src="images/footer/footer-icon1.png" alt="Beans Icon" class="footer-icon">
+                    <div class="h6-wrapper">
+                        <div class="line-top"></div>
+                        <h6>Golestan Beans</h6>
+                        <div class="line-bottom"></div>
+                    </div>
+                    <ul>
+                        <li><a href="#">Golestan Peas</a></li>
+                        <li><a href="#">Navy Beans</a></li>
+                        <li><a href="#">Pinto Beans</a></li>
+                        <li><a href="#">Lentils</a></li>
+                        <li><a href="#">Kidney Beans</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <img src="images/footer/footer-icon2.png" alt="Spices Icon" class="footer-icon">
+                    <div class="h6-wrapper">
+                        <div class="line-top"></div>
+                        <h6>Golestan Spices</h6>
+                        <div class="line-bottom"></div>
+                    </div>
+
+                    <ul>
+                        <li><a href="#">Saffron</a></li>
+                        <li><a href="#">Turmeric</a></li>
+                        <li><a href="#">Black Pepper</a></li>
+                        <li><a href="#">Garlic Powder</a></li>
+                        <li><a href="#">Curry Seasoning</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <img src="images/footer/footer-icon4.png" alt="Tea Bag Icon" class="footer-icon">
+                    <div class="h6-wrapper">
+                        <div class="line-top"></div>
+                        <h6>Golestan Tea Bags</h6>
+                        <div class="line-bottom"></div>
+                    </div>
+                    <ul>
+                        <li><a href="#">Black Line Tea Bag</a></li>
+                        <li><a href="#">Earl Grey Tea Bag</a></li>
+                        <li><a href="#">Mint Herbal Tea</a></li>
+                        <li><a href="#">Chamomile Tea</a></li>
+                        <li><a href="#">Borage Herbal Tea</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <img src="images/footer/footer-icon1.png" alt="Tea Cup Icon" class="footer-icon">
+                    <div class="h6-wrapper">
+                        <div class="line-top"></div>
+                        <h6>Golestan Tea</h6>
+                        <div class="line-bottom"></div>
+                    </div>
+                    <ul>
+                        <li><a href="#">Premium Indian Tea</a></li>
+                        <li><a href="#">Earl Grey Tea</a></li>
+                        <li><a href="#">Black Line</a></li>
+                        <li><a href="#">Ceylon Tea</a></li>
+                        <li><a href="#">Breakfast Tea</a></li>
+                    </ul>
+                </div>
 
             </div>
-          </div>
-        </li>
 
-        <!-- سایر منوها -->
-        <li class="nav-item"><a class="nav-link" href="#">Mobile</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">TV & AV</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Appliances</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Computing & Displays</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Audio</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Wearables</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Accessories</a></li>
-      </ul>
-
-      <!-- Desktop search -->
-      <div class="position-relative me-2 d-none d-xl-block">
-        <i class="bi bi-search position-absolute" style="top: 50%; left: 10px; transform: translateY(-50%);"></i>
-        <input class="form-control rounded-pill" style="padding-left:35px;" type="search" placeholder="Search">
-      </div>
-
-      <!-- Desktop icons -->
-      <div class="d-none d-xl-flex align-items-center">
-        <a href="#" class="icon-btn"><i class="bi bi-cart"></i></a>
-        <a href="#" class="icon-btn"><i class="bi bi-person"></i></a>
-      </div>
-
-    </div>
-  </div>
-</nav>
-
-<!-- بنر با عکس و دکمه‌ها -->
-<div class="container-fluid p-0">
-  <div class="banner-wrapper2">
-    <img src="images/video/87.jpg" alt="بنر">
-
-    <!-- دکمه‌ها باید داخل همین div باشن -->
-    <div class="cta-button">
-      <a href="#" class="learn-more">Learn more</a>
-      <a href="#" class="buy-now">Buy now</a>
-    </div>
-  </div>
-</div>
-
-
-<!-- بنر دوم -->
-<div class="banner-wrapper">
-  <img src="images/image banner/۱.webp" alt="بنر">
-  <a href="#" class="btn-buy">Buy now</a>
-</div>
-
-
-<div class="container-fluid my-4">
-  <div class="row g-3 scrollable-row">
-
-    <div class="col col-md-3 col-lg-3">
-      <div class="product">
-        <img src="images/images product/11.jpg" alt="Galaxy Z Flip7">
-        <div class="product-title">Galaxy Z Flip7</div>
-        <a href="#" class="buy-btn">Buy now</a>
-      </div>
-    </div>
-
-    <div class="col col-md-3 col-lg-3">
-      <div class="product">
-        <img src="images/images product/12.webp" alt="Galaxy Watch8 Classic">
-        <div class="product-title">Galaxy Watch8 Classic</div>
-        <a href="#" class="buy-btn">Buy now</a>
-      </div>
-    </div>
-
-    <div class="col col-md-3 col-lg-3">
-      <div class="product">
-        <img src="images/images product/13.webp" alt="Galaxy Watch8">
-        <div class="product-title">Galaxy Watch8</div>
-        <a href="#" class="buy-btn">Buy now</a>
-      </div>
-    </div>
-
-    <div class="col col-md-3 col-lg-3">
-      <div class="product">
-        <img src="images/images product/15.jpg" alt="Galaxy Watch Ultra">
-        <div class="product-title">Galaxy Watch Ultra</div>
-        <a href="#" class="buy-btn">Buy now</a>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<div class="position-relative">
-  <!-- ویدیو دسکتاپ -->
-  <video class="w-100 d-none d-md-block" autoplay muted loop>
-    <source src="images/video 2/1.webm" type="video/mp4">
-  </video>
-
-  <!-- ویدیو موبایل -->
-  <video class="w-100 d-block d-md-none" autoplay muted loop>
-    <source src="images/video 2/2.webm" type="video/mp4">
-  </video>
-
-  <!-- باکس متن و دکمه‌ها -->
-  <div class="position-absolute overlay-box text-dark">
-    <h1>2025 AI TVs</h1>
-    <p>Explore new AI TVs.</p>
-    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-md-start align-items-center">
-      <a href="#" class="link-learn">Learn more</a>
-      <a href="#" class="btn btn-custom">Shop now</a>
-    </div>
-  </div>
-</div>
-
-<!-- محصول دوم  -->
-<div class="container-fluid my-4">
-  <div class="row g-3 scrollable-row">
-
-    <div class="col col-md-3 col-lg-3">
-      <div class="product">
-        <img src="images/images product/16.avif" alt="Galaxy Z Flip7">
-        <div class="product-title">Galaxy Z Flip7</div>
-        <a href="#" class="buy-btn">Buy now</a>
-      </div>
-    </div>
-
-    <div class="col col-md-3 col-lg-3">
-      <div class="product">
-        <img src="images/images product/17.avif" alt="Galaxy Watch8 Classic">
-        <div class="product-title">Galaxy Watch8 Classic</div>
-        <a href="#" class="buy-btn">Buy now</a>
-      </div>
-    </div>
-
-    <div class="col col-md-3 col-lg-3">
-      <div class="product">
-        <img src="images/images product/18.avif" alt="Galaxy Watch8">
-        <div class="product-title">Galaxy Watch8</div>
-        <a href="#" class="buy-btn">Buy now</a>
-      </div>
-    </div>
-
-    <div class="col col-md-3 col-lg-3">
-      <div class="product">
-        <img src="images/images product/19.avif" alt="Galaxy Watch Ultra">
-        <div class="product-title">Galaxy Watch Ultra</div>
-        <a href="#" class="buy-btn">Buy now</a>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<!-- بنر با عکس و دکمه‌ها -->
-<div class="container-fluid p-0">
-  <div class="banner-wrapper2">
-    <img src="images/image banner/۲.webp" alt="بنر">
-
-    <!-- دکمه‌ها باید داخل همین div باشن -->
-    <div class="cta-button2">
-      <a href="#" class="learn-more2">Learn more</a>
-      <a href="#" class="buy-now2">Buy now</a>
-    </div>
-  </div>
-</div>
-
-<!-- محصول سوم  -->
-<div class="container-fluid my-4">
-  <div class="row g-3 scrollable-row">
-
-    <div class="col col-md-3 col-lg-3">
-      <div class="product">
-        <img src="images/images product/20.avif" alt="Galaxy Z Flip7">
-        <div class="product-title">Galaxy Z Flip7</div>
-        <a href="#" class="buy-btn">Buy now</a>
-      </div>
-    </div>
-
-    <div class="col col-md-3 col-lg-3">
-      <div class="product">
-        <img src="images/images product/21.avif" alt="Galaxy Watch8 Classic">
-        <div class="product-title">Galaxy Watch8 Classic</div>
-        <a href="#" class="buy-btn">Buy now</a>
-      </div>
-    </div>
-
-    <div class="col col-md-3 col-lg-3">
-      <div class="product">
-        <img src="images/images product/22.webp" alt="Galaxy Watch8">
-        <div class="product-title">Galaxy Watch8</div>
-        <a href="#" class="buy-btn">Buy now</a>
-      </div>
-    </div>
-
-    <div class="col col-md-3 col-lg-3">
-      <div class="product">
-        <img src="images/images product/23.avif" alt="Galaxy Watch Ultra">
-        <div class="product-title">Galaxy Watch Ultra</div>
-        <a href="#" class="buy-btn">Buy now</a>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-
-<div class="container-fluid my-1">
-
-  <h4 class="ms-3 mb-3">Recommended for you</h4>
-
-  <div id="slider1" class="product-slider px-2">
-
-    <!-- کارت نمونه -->
-    <div class="product-card">
-      <div class="product-image">
-        <img src="images/images end/1.jpg" alt="product">
-      </div>
-      <p class="mt-2">Galaxy Buds3 Pro</p>
-      <div class="price">$189.99 <span class="discount">Save $60</span></div>
-      <div class="old-price">$249.99</div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-image">
-        <img src="images/images end/2.webp" alt="product">
-      </div>
-      <p class="mt-2">Galaxy Watch8 Classic</p>
-      <div class="price">$499.99</div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-image">
-        <img src="images/images end/3.jpg" alt="product">
-      </div>
-      <p class="mt-2">Q-series Dolby ATMOS</p>
-      <div class="price">$1499.99 <span class="discount">Save $500</span></div>
-      <div class="old-price">$1999.99</div>
-    </div>
-
-    <!-- بقیه کارت‌ها -->
-    <div class="product-card">
-      <div class="product-image">
-        <img src="images/images end/4.webp" alt="product">
-      </div>
-      <p class="mt-2">Galaxy Watch8</p>
-      <div class="price">$299.99</div>
-    </div>
-
-    <div class="product-card">
-      <div class="product-image">
-        <img src="images/images end/5.jpg" alt="product">
-      </div>
-      <p class="mt-2">Galaxy Watch8 Classic</p>
-      <div class="price">$399.99</div>
-    </div>
-
-
-     <div class="product-card">
-      <div class="product-image">
-        <img src="images/images end/6.jpg" alt="product">
-      </div>
-      <p class="mt-2">AI TV with Samsung Vision AI</p>
-      <div class="price">$399.99</div>
-    </div>
-
-   </div>
-
- <!-- کنترل‌ها + خط پیشرفت -->
-<div class="d-flex justify-content-center align-items-center gap-3 mt-4">
-
-  <!-- خط پیشرفت -->
-  <div class="progress-line">
-    <div class="progress-active"></div>
-  </div>
-
-  <!-- فلش‌ها سمت راست -->
-  <div class="d-flex gap-2">
-    <button class="arrow-btn" onclick="document.getElementById('slider1').scrollBy({left:-250,behavior:'smooth'})">
-      <i class="bi bi-arrow-left"></i>
-    </button>
-    <button class="arrow-btn" onclick="document.getElementById('slider1').scrollBy({left:250,behavior:'smooth'})">
-      <i class="bi bi-arrow-right"></i>
-    </button>
-  </div>
-
-</div>
-
-<footer class="pt-5" role="contentinfo" aria-label="Footer">
-  <div class="container">
-
-    <!-- Desktop version -->
-    <div class="row desktop-footer d-none d-md-flex">
-      <div class="col-6 col-md-3 mb-4 mega-col">
-        <h6>SHOP</h6>
-        <a href="#">Phones</a>
-        <a href="#">Tablets</a>
-        <a href="#">Watches</a>
-        <a href="#">Mobile Accessories</a>
-        <a href="#">Mobile Audio</a>
-        <a href="#">TV & Home Theater</a>
-        <a href="#">Computing</a>
-        <a href="#">Monitors</a>
-        <a href="#">Memory & Storage</a>
-        <a href="#">Home Appliances</a>
-        <a href="#">Smart Home</a>
-        <a href="#">Samsung Experience Stores</a>
-        <a href="#">Apps & Services</a>
-        <a href="#">Shop Certified Re-Newed</a>
-        <a href="#">Samsung Authorized Reseller Program</a>
-      </div>
-
-      <div class="col-6 col-md-3 mb-4 mega-col">
-        <h6>SUPPORT</h6>
-        <a href="#">Chat with Us</a>
-        <a href="#">Order Help</a>
-        <a href="#">Product Help</a>
-        <a href="#">Your Account</a>
-        <a href="#">Register Your Product</a>
-        <a href="#">Request a Repair</a>
-        <a href="#">Contact Us</a>
-        <a href="#">Samsung Community</a>
-        <a href="#">Give Feedback</a>
-        <a href="#">Slide-in Electric Range Recall</a>
-        <a href="#">Manuals & Software</a>
-        <a href="#">Returns</a>
-      </div>
-
-      <div class="col-6 col-md-3 mb-4 mega-col">
-        <h6>OFFERS</h6>
-        <a href="#">Offers</a>
-        <a href="#">Samsung Rewards</a>
-        <a href="#">Education Offers Program</a>
-        <a href="#">Government Offers Program</a>
-        <a href="#">Military Offers Program</a>
-        <a href="#">Employee Offers Program</a>
-        <a href="#">First Responders Offers Program</a>
-        <a href="#">Business Offers Program</a>
-      </div>
-
-      <div class="col-6 col-md-3 mb-4 mega-col no-divider">
-        <h6>SUSTAINABILITY</h6>
-        <a href="#">Overview</a>
-        <a href="#">Environment</a>
-        <a href="#">Digital Responsibility</a>
-        <a href="#">Security and Privacy</a>
-        <a href="#">Accessibility</a>
-        <a href="#">Labor & Human Rights</a>
-        <a href="#">Belonging at Samsung</a>
-        <a href="#">Sustainable Supply Chain</a>
-        <a href="#">Corporate Citizenship</a>
-        <a href="#">Corporate Sustainability</a>
-        <div class="about-block">
-          <h6>ABOUT US</h6>
-          <a href="#">Leadership & Mission</a>
-          <a href="#">Our Business</a>
-          <a href="#">Brand Identity</a>
-          <a href="#">Careers</a>
-          <a href="#">Investor Relations</a>
-          <a href="#">Newsroom</a>
-          <a href="#">Ethics</a>
-          <a href="#">Samsung Design</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Mobile accordion version -->
-    <div class="accordion mobile-footer d-block d-md-none" id="footerAccordion">
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#shopCollapse">
-            SHOP
-          </button>
-        </h2>
-        <div id="shopCollapse" class="accordion-collapse collapse">
-          <div class="accordion-body p-2">
-            <a href="#">Phones</a>
-            <a href="#">Tablets</a>
-            <a href="#">Watches</a>
-            <a href="#">Mobile Accessories</a>
-            <a href="#">Mobile Audio</a>
-            <a href="#">TV & Home Theater</a>
-            <a href="#">Computing</a>
-            <a href="#">Monitors</a>
-            <a href="#">Memory & Storage</a>
-            <a href="#">Home Appliances</a>
-            <a href="#">Smart Home</a>
-            <a href="#">Samsung Experience Stores</a>
-            <a href="#">Apps & Services</a>
-            <a href="#">Shop Certified Re-Newed</a>
-            <a href="#">Samsung Authorized Reseller Program</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#supportCollapse">
-            SUPPORT
-          </button>
-        </h2>
-        <div id="supportCollapse" class="accordion-collapse collapse">
-          <div class="accordion-body p-2">
-            <a href="#">Chat with Us</a>
-            <a href="#">Order Help</a>
-            <a href="#">Product Help</a>
-            <a href="#">Your Account</a>
-            <a href="#">Register Your Product</a>
-            <a href="#">Request a Repair</a>
-            <a href="#">Contact Us</a>
-            <a href="#">Samsung Community</a>
-            <a href="#">Give Feedback</a>
-            <a href="#">Slide-in Electric Range Recall</a>
-            <a href="#">Manuals & Software</a>
-            <a href="#">Returns</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#offersCollapse">
-            OFFERS
-          </button>
-        </h2>
-        <div id="offersCollapse" class="accordion-collapse collapse">
-          <div class="accordion-body p-2">
-            <a href="#">Offers</a>
-            <a href="#">Samsung Rewards</a>
-            <a href="#">Education Offers Program</a>
-            <a href="#">Government Offers Program</a>
-            <a href="#">Military Offers Program</a>
-            <a href="#">Employee Offers Program</a>
-            <a href="#">First Responders Offers Program</a>
-            <a href="#">Business Offers Program</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sustainCollapse">
-            SUSTAINABILITY
-          </button>
-        </h2>
-        <div id="sustainCollapse" class="accordion-collapse collapse">
-          <div class="accordion-body p-2">
-            <a href="#">Overview</a>
-            <a href="#">Environment</a>
-            <a href="#">Digital Responsibility</a>
-            <a href="#">Security and Privacy</a>
-            <a href="#">Accessibility</a>
-            <a href="#">Labor & Human Rights</a>
-            <a href="#">Belonging at Samsung</a>
-            <a href="#">Sustainable Supply Chain</a>
-            <a href="#">Corporate Citizenship</a>
-            <a href="#">Corporate Sustainability</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#aboutCollapse">
-            ABOUT US
-          </button>
-        </h2>
-        <div id="aboutCollapse" class="accordion-collapse collapse">
-          <div class="accordion-body p-2">
-            <a href="#">Leadership & Mission</a>
-            <a href="#">Our Business</a>
-            <a href="#">Brand Identity</a>
-            <a href="#">Careers</a>
-            <a href="#">Investor Relations</a>
-            <a href="#">Newsroom</a>
-            <a href="#">Ethics</a>
-            <a href="#">Samsung Design</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-   </div>
-</footer>
-
-
-<footer class="container-fluid bg-white mt-4 py-3 small">
-
-    <!-- Upper part: Copyright + App Images -->
-    <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center">
-        <div class="text-center text-lg-start mb-2 mb-lg-0">
-            Copyright © 1995-2025 SAMSUNG. All Rights Reserved.
-        </div>
-
-        <div class="d-flex align-items-center gap-2">
-            <a href="#" aria-label="Get Shop Samsung App">
-                <img src="https://images.samsung.com/is/content/samsung/assets/us/footer/text-banner-2.svg" alt="Get Shop Samsung App">
-            </a>
-            <a href="#" aria-label="Never miss a thing">
-                <img src="https://images.samsung.com/is/image/samsung/assets/us/footer/ScomQR_PNG_20250122.png?$ORIGIN_PNG$" alt="Never miss a thing">
-            </a>
-        </div>
-    </div>
-
-    <!-- Divider line -->
-    <div class="divider-line"></div>
-
-    <!-- Lower part: Links + Social Icons -->
-    <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center mt-2">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start mb-2 mb-lg-0">
-            <strong>USA/ENGLISH</strong>
-            <span class="mx-2 text-muted">|</span>
-            <a href="#">Privacy</a>
-            <span class="mx-2 text-muted">|</span>
-            <a href="#">Do Not Sell Or Share My Personal Information</a>
-            <span class="mx-2 text-muted">|</span>
-            <a href="#">Consumer Health Data Privacy Statement</a>
-            <span class="mx-2 text-muted">|</span>
-            <a href="#">Legal</a>
-            <span class="mx-2 text-muted">|</span>
-            <a href="#">Accessibility Help</a>
-            <span class="mx-2 text-muted">|</span>
-            <a href="#">Sitemap</a>
-        </div>
-
-        <div class="d-flex align-items-center">
-            <span class="text-uppercase me-2 small">Stay in the loop?</span>
-            <div class="d-flex gap-2">
-                <a href="#" aria-label="Facebook"><i class="bi bi-facebook fs-5"></i></a>
-                <a href="#" aria-label="Twitter"><i class="bi bi-twitter fs-5"></i></a>
-                <a href="#" aria-label="Instagram"><i class="bi bi-instagram fs-5"></i></a>
-                <a href="#" aria-label="YouTube"><i class="bi bi-youtube fs-5"></i></a>
-                <a href="#" aria-label="Email"><i class="bi bi-envelope fs-5"></i></a>
+            <div class="copyright">
+                © All Rights Reserved Golestan Company 2022–2025
+                <div class="designer">Designed by Golestan Studio</div>
             </div>
         </div>
-    </div>
-
-</footer>
+    </footer>
 
 
 
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
